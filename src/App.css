@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.app-container {
+  background-color: #f5d0fe;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  width: 400px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    width: auto;
+  }
+  .input-field {
+    width: 100px;
+  }
+  .save-button,
+  .edit-button {
+    width: 80px;
+  }
+}
+
+.heading {
+  color: #000;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 28px;
+}
+.input-container,
+.saved-container {
+  display: flex;
+  align-items: center;
+}
+.input-field {
+  height: 30px;
+  margin-right: 10px;
+  width: 200px;
+  color: #323f4b;
+}
+.input-field:focus {
+  border-color: #d946ef;
+}
+
+.input-field:hover {
+  border-color: #d946ef;
+}
+.input-field:focus:hover {
+  border-color: #d946ef;
+}
+.save-button,
+.edit-button {
+  background-color: #d946ef;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  height: 30px;
+  width: 100px;
+  transition: transform 0.3 ease background-color 0.3 ease;
+}
+
+.save-button:hover,
+.edit-button:hover {
+  background-color: #f5d0fe;
+  transform: scale(1.05);
+}
+
+.user-entered-text {
+  color: #323f4b;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  margin-right: 20px;
+}
